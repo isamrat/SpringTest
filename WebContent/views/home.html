@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../../js/custom/empDetails.js"></script>
+  
+<title>Insert Your Choice</title>
+</head>
+<body>
+	<div class="container" align="center">
+	<h1>Insert a City to view Employee</h1>
+	
+		<table border="0">
+			<tr>
+				<td></td>
+				<td width="100">
+					<select name="city" id="drpdwn">
+						<option value="" disabled selected>Choose City</option>
+						<option value="Kolkata">Kolkata</option>
+						<option value="Chennai">Chennai</option>
+						<option value="Mumbai">Mumbai</option>
+						<option value="Bangalore">Bangalore</option>
+					</select>
+				</td>
+			</tr>
+			
+			<tr>
+				<td height="50"></td>
+				<td align="center"><input type="submit" id="btn" class="btn btn-success btn-block" value="submit"></td>
+			</tr>
+			
+			<!-- <tr>
+				<td height="50"></td>
+				<td id="display"></td>
+			</tr> -->
+		</table>
+		
+		<div id="resultBlock" style="display: none;" >
+		<input type="text" id="searchBox" placeholder="Search by EmployeeId">
+		<select id="filter">
+			<option value="" disabled selected>Filter by Exp</option>
+			<option value="new">0-1</option>
+			<option value="semi">1-5</option>
+			<option value="pro">>5</option>
+		</select>
+		<table align="center" id="resultTable" class="table table-striped">
+			<thead>
+				<tr>
+					<th width="100">EmployeeId</th>
+					<th width="100">Name</th>
+					<th width="100">Exp</th>
+					<th width="100">DeputeCity</th>
+				</tr>
+			</thead>
+			<tbody id="displayData"></tbody>
+			<tr></tr>
+		</table>
+		</div>
+	</div>
+	<!-- <div align="center" id="display"></div> -->
+</body>
+</html>
